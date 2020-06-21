@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movie_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/movie_place_holder"
+            android:contentDescription="@string/movie_img_desc"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/movie_item_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_item_title"
+                    android:lines="1"
+                    android:textColor="@color/icons"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:ellipsize="end"
+                    tools:text="Captain America: The First Avenger"
+                    />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_item_genres"
+                    android:lines="1"
+                    android:textColor="@color/icons"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    android:ellipsize="end"
+                    tools:text="Action, Adventure, Sci-Fi" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_item_year"
+                    android:lines="1"
+                    android:textColor="@color/icons"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:ellipsize="end"
+                    tools:text="2018" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_item_btn_favorite"
+                android:layout_margin="8dp"
+                tools:src="@drawable/ic_favorite_border_white_24dp"
+                android:contentDescription="@string/movie_item_btn_favorite_desc" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

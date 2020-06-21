@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Infity Saga</string>
+    <string name="no_items">No items found</string>
+    <string name="movie_img_desc">Movie Image</string>
+    <string name="movie_item_btn_favorite_desc">Favorite Button</string>
+    <string name="director_title">Director:</string>
+    <string name="writer_title">Writer:</string>
+    <string name="actors_title">Actors:</string>
+    <string name="plot_title">Plot:</string>
+    <string name="rated_holder">Rated: %1$s</string>
+    <string name="released_holder">Released: %1$s</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="by_title">By Title</string>
+    <string name="by_favorite">By Favorite</string>
+    <string name="by_year">By Year</string>
+    <string name="cancel">Cancel</string>
+</resources>
