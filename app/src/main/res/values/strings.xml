@@ -15,4 +15,5 @@
     <string name="by_favorite">By Favorite</string>
     <string name="by_year">By Year</string>
     <string name="cancel">Cancel</string>
+    <string name="cant_fetch_now">Can\'t fetch movies now, check your internet connection and try again later</string>
 </resources>

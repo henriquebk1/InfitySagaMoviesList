@@ -45,7 +45,7 @@ class MoviesFragment : Fragment() {
             when (it.status) {
                 LoadingState.Status.FAILED -> {
                     refreshList.isRefreshing = false
-                    Toast.makeText(requireContext(), it.msg, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), R.string.cant_fetch_now, Toast.LENGTH_SHORT).show()
                 }
                 LoadingState.Status.RUNNING -> {
                     refreshList.isRefreshing = true
@@ -69,6 +69,8 @@ class MoviesFragment : Fragment() {
         }
         moviesList.adapter = adapter
         viewModel.movies.observe(viewLifecycleOwner, Observer {
+            moviesListEmpty.visibility = if(it.isEmpty()) View.VISIBLE else View.GONE
+            
             adapter.submitList(it)
         })
     }
